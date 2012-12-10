@@ -10,7 +10,11 @@ License:          GPL-2
 URL:              http://cran.r-project.org/web/packages/%{packname}/index.html
 Source0:          http://cran.r-project.org/src/contrib/%{packname}_%{version}.tar.gz
 Requires:         R-methods 
-BuildRequires:    R-devel Rmath-devel texlive-collection-latex R-methods
+BuildRequires:    R-devel
+BuildRequires:    Rmath-devel
+BuildRequires:    texlive-collection-latex
+BuildRequires:    R-methods
+BuildRequires:    pkgconfig(lapack)
 
 %description
 This is a special case of sparse matrices, used by coxme
@@ -41,3 +45,11 @@ rm -f %{buildroot}%{rlibdir}/R.css
 %{rlibdir}/%{packname}/help
 %{rlibdir}/%{packname}/include
 %{rlibdir}/%{packname}/libs
+
+
+%changelog
+* Fri Feb 17 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.3-1
++ Revision: 776221
+- Import R-bdsmatrix
+- Import R-bdsmatrix
+
