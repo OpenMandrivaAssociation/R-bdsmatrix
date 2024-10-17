@@ -7,7 +7,7 @@ Release:          3
 Summary:          Routines for Block Diagonal Symmetric matrices
 Group:            Sciences/Mathematics
 License:          GPL-2
-URL:              http://cran.r-project.org/web/packages/%{packname}/index.html
+URL:              https://cran.r-project.org/web/packages/%{packname}/index.html
 Source0:          http://cran.r-project.org/src/contrib/bdsmatrix_1.3-1.tar.gz
 Requires:         R-methods 
 BuildRequires:    R-devel
